@@ -1,0 +1,29 @@
+/* line 2 */
+.clearfix {
+  *zoom: 1;
+  /* for IE 6/7 */
+}
+/* line 5 */
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+  /* for Opera */
+}
+/* line 10 */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 29 */
+#skyscraper_ad {
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  behavior: url(ie-css3.htc);
+  zoom: 1;
+}

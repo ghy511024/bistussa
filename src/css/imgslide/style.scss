@@ -1,0 +1,90 @@
+ 
+ @import "../_common.scss";
+ #head{
+     min-height:120px;
+ }
+ 
+ #content{
+     width:960px;
+     min-height:200px;
+     margin:20px auto;
+     @include box-shadow(0px, 0px ,10px ,0.5);
+     @include border-radius(4px);
+     background: #fff;
+     .demo{
+         position:relative;
+         height:350px;
+         #slides{
+             position:absolute;
+             top:15px;
+             left: 50%;
+             margin-left: -285px;
+             z-index:100;
+             .slides_container {
+                 width:570px;
+                 overflow:hidden;
+                 position:relative;
+                 display:none;
+                 .slide {
+                     width:570px;
+                     height:270px;
+                     display:block;
+                     .caption {
+                         z-index:500;
+                         position:absolute;
+                         bottom:-35px;
+                         left:0;
+                         height:30px;
+                         padding:5px 20px 0 20px;
+                         background:#000;
+                         background:rgba(0,0,0,.5);
+                         width:540px;
+                         font-size:1.3em;
+                         line-height:1.33;
+                         color:#fff;
+                         border-top:1px solid #000;
+                         text-shadow:none;
+                     }
+                 }
+             }
+             .next,.prev{
+                 position:absolute;
+                 top:107px;
+                 left:-39px;
+                 width:24px;
+                 height:43px;
+                 display:block;
+                 z-index:101;
+             }
+             .next{
+                 left:585px;
+             }
+             .pagination {
+                 margin:26px auto 0;
+                 width:100px;
+                 li {
+                     float:left;
+                     margin:0 1px;
+                     list-style:none;
+                     a {
+                         display:block;
+                         width:12px;
+                         height:0;
+                         padding-top:12px;
+                         background-image:url(../img/pagination.png);
+                         background-position:0 0;
+                         float:left;
+                         overflow:hidden;
+                     }
+                 }
+                 li.current{
+                     a{
+                         background-position:0 -12px;
+                     }
+                 }
+             }
+         }
+         
+     }
+ }
+  

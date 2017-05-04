@@ -1,0 +1,19 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "微软雅黑";
+  font-size: 100%;
+  background: #ccc;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}

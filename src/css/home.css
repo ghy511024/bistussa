@@ -1,0 +1,122 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+body {
+    line-height: 1;
+    background-color: #E6E6E6;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+    background: url("../images/")
+}
+
+/* remember to define focus styles! */
+:focus {
+    outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+    text-decoration: none;
+}
+del {
+    text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* end css reset */
+
+
+
+body{
+    font-family: "athelas-1","athelas-2",serif;
+    font-size:15px;
+    line-height:20px;
+    color:#330;
+}
+
+#arbor{
+    position:absolute;
+    min-height:100%;
+    min-width:100%;
+}
+.top-head{
+    background: #222;
+    width: 100%;
+    height: 60px;
+    border-bottom: solid 1px #333;
+}
+.top-head img#ssa-logo{
+    margin-left: 100px;
+    height: 60px;
+}
+#nav{
+    z-index: 1;
+    background: white url("../images/book/bg2.gif") repeat-x;
+    font-style:italic;
+    color:#887;
+    padding:17px 0 0 160px;
+    height:60px;
+    margin:0px 0px 0 0px;
+    border-bottom: solid 1px #ccc;
+}
+
+#nav > p{
+    display:none;
+}
+#nav .back{
+    background:url(back-arrow.png) 6px 6px no-repeat;
+    width:140px;
+    height:36px;
+    display:none;
+    position:absolute;
+    left:10px;
+    top:11px;
+}
+
+#nav .back.active{
+    display:block;
+}
+
+#sitemap{
+    z-index: -1;
+    margin-top: 2px;
+    background-color: #E6E6E6;
+}
+
+#sitemap.linkable{
+    cursor:pointer;
+}
+
+
+

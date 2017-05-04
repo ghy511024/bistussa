@@ -1,0 +1,54 @@
+/* 
+    配置文件css
+*/
+
+/*=====================================公共配置文件=======================================*/
+table {
+  max-width: 100%;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #ddd;
+}
+
+.table{width: 100%;  margin-bottom: 20px;}
+.table th, .table td { padding: 8px;line-height: 20px;text-align: left;}
+.table th, .table td { vertical-align:top;border-top: 1px solid #dddddd;}
+
+.table caption + thead tr:first-child th,
+.table caption + thead tr:first-child td,
+.table colgroup + thead tr:first-child th,
+.table colgroup + thead tr:first-child td,
+.table thead:first-child tr:first-child th,
+.table thead:first-child tr:first-child td {
+  border-top: 0;
+}
+.table tbody + tbody {  border-top: 2px solid #dddddd; }
+.table th,.table td {  border-left: 1px solid #dddddd; }
+.table th:last-child,.table td:last-child {  border-right: 1px solid #dddddd; }
+
+ input,textarea{  padding: 4px; background-color: #fff; border: 0;resize: none;}
+ 
+ .new-item{display: none;}
+ .new-item input,.new-item textarea{ border: 1px solid #ccc;;resize: normal;}
+
+/*=====================================公共配置文件=======================================*/
+
+.new-item .save_btn,.new-item .cancel_btn{display: inline-block}
+
+.manage-list{padding-top: 90px;}
+
+ul li{list-style: none; min-height: 65px; border-bottom: 1px solid #ccc;
+margin-top: 5px;}
+
+li input,li textarea{border: none; background-color: #fff;margin-left: 10px;}
+li input,li textarea{padding: 4px;resize: none;}
+.clear{clear: both}
+
+.save_btn,.cancel_btn{display:none}
+.edit .save_btn,.edit .cancel_btn{display: inline-block}
+.edit .edit_btn,.edit .del_btn{display: none}
+.edit input,.edit textarea{border: 1px solid #ccc;}
+
+.add-new{display: none;position: absolute;margin-top: -70px;}
+.add-new input,.add-new textarea{border: 1px solid #ccc;}

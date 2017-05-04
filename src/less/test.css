@@ -1,0 +1,9 @@
+.content .content-inner .main {
+  color: #ccc;
+}
+.content h1, .content h2 {
+  height: 100px;
+}
+.content h1 .item, .content h2 .item {
+  width: 100px;
+}

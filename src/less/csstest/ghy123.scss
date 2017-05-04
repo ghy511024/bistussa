@@ -1,0 +1,32 @@
+
+.clearfix {
+    *zoom: 1;             /* for IE 6/7 */
+    &:before,
+    &:after {
+        display: table;
+        content: "";
+        line-height: 0;     /* for Opera */
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin border-radius ($radius:3px) {
+    border-radius: $radius;
+    -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
+    //IE
+    behavior: url(ie-css3.htc);
+    zoom:1;
+}
+@mixin cssAnimate($time:0.3s, $easy:ease-out){
+    -webkit-transition: all $time $easy;
+    -moz-transition: all $time $easy;
+    -o-transition: all $time $easy;
+    transition: all $time $easy;
+}
+#skyscraper_ad {
+    @include cssAnimate(0.4s,ease-out);
+    @include border-radius(3px);
+}
