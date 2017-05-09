@@ -1,0 +1,1 @@
+.inblock{display:-moz-inline-stack;display:inline-block;vertical-align:top;zoom:1;*display:inline}.clear:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0;content:'\20';clear:both;display:block}.parent{width:400px;margin:0 auto;background:#ccc}.parent .item{width:100px;height:100px;float:left;background:red;margin:10px}

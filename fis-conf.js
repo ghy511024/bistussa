@@ -20,14 +20,14 @@ fis.match('*.scss', {
 
 fis.match('*.js', {
     // fis-optimizer-uglify-js 插件进行压缩，已内置
-    optimizer: fis.plugin('uglify-js')
+//    optimizer: fis.plugin('uglify-js')
 });
 
 fis.match('src/({images,js,css}/**)', {
     release: "static/$1"
 }).match('src/page/(**)', {
     release: "page/$1"
-}).match('src/page/index.html', {
+}).match('**index.html', {
     release: "/index.html"
 })
 //===================== 忽略规则  ===================
